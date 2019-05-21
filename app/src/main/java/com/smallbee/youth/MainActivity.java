@@ -9,6 +9,10 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * 演示数量的计算
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override
