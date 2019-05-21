@@ -3,6 +3,9 @@ package com.smallbee.youth;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import com.smallbee.youth.utils.CalculatorUtils;
+
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,20 +23,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void arithTest() throws IllegalAccessException {
-//        double value1=1.2345678912311;
-//        double value2=9.1234567890123;
-//        double value1=1.111222333444;
-//        double value2=2.111111111111;
-//        BigDecimal value3=new BigDecimal(Double.toString(value1));
-//        BigDecimal value4=new BigDecimal(Double.toString(value2));
-//        System.out.println("精确加法================="+ ArithTest.add(value1, value2));
-//        System.out.println("精确减法================="+ArithTest.sub(value1, value2));
-//        System.out.println("精确乘法================="+ArithTest.mul(value1, value2));//==2.345913815048321
-//        System.out.println("精确除法 使用默认精度 ================="+ArithTest.div(value1, value2));//使用默认精度 ================0.5263684737
-//        System.out.println("精确除法  设置精度================="+ArithTest.div(value1, value2,20));//设置精度     =================0.5263684737366593
-//        System.out.println("四舍五入   小数点后保留几位 ================="+ArithTest.round(value1, 10)); //四舍五入   小数点后保留几位 =================1.1112223334
-//        System.out.println("比较大小 ================="+ArithTest.equalTo(value3, value4));//==false
-
+        double value1=1.2345678912311;
+        double value2=9.1234567890123;
+        BigDecimal value3=new BigDecimal(Double.toString(value1));
+        BigDecimal value4=new BigDecimal(Double.toString(value2));
+        System.out.println("精确加法================="+ CalculatorUtils.add(value1, value2));
+        System.out.println("精确减法================="+CalculatorUtils.sub(value1, value2));
+        System.out.println("精确乘法================="+CalculatorUtils.mul(value1, value2));//==2.345913815048321
+        System.out.println("精确除法 使用默认精度 ================="+CalculatorUtils.div(value1, value2));//使用默认精度 ================0.5263684737
+        System.out.println("精确除法  设置精度================="+CalculatorUtils.div(value1, value2,20));//设置精度     =================0.5263684737366593
+        System.out.println("四舍五入   小数点后保留几位 ================="+CalculatorUtils.round(value1, 10)); //四舍五入   小数点后保留几位 =================1.1112223334
+        System.out.println("比较大小 ================="+CalculatorUtils.equalTo(value3, value4));//==false
 
 
         List<Integer> listA=new ArrayList<>();
