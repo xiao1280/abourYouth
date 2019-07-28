@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+     />
+
+
+    <!--
+      app:suffixHour="时"
+        app:suffixMinute="分"
+        app:suffixSecond="秒"
+        app:suffixMillisecond="毫秒"
+
+         app:isShowMillisecond="true"
+    -->
+    <cn.iwgang.countdownview.CountdownView
+        android:id="@+id/cv_countdownViewTest1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:isHideTimeBackground="false"
+
+        app:isShowDay="true"
+        app:isShowHour="true"
+        app:isShowMinute="true"
+        app:isShowSecond="true"
+
+        app:timeTextColor="#e7e1e1"
+        app:timeTextSize="22sp"
+        app:isTimeTextBold="true"
+        app:suffixGravity="bottom"
+        app:suffixTextColor="#000000"
+        app:suffixTextSize="12sp"
+
+        app:timeBgColor="#e92b2b"
+       />
+
+    <!--
+         <cn.iwgang.countdownview.CountdownView
+                    android:id="@+id/cvSpike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_10"
+                    app:isShowHour="true"
+                    app:isShowMinute="true"
+                    app:isShowSecond="true"
+                    app:isHideTimeBackground="false"
+                    app:layout_constraintLeft_toRightOf="@id/tvSpike"
+                    app:timeBgColor="@color/red_ED3F3F"
+                    app:timeBgRadius="@dimen/px_6"
+                    app:timeTextColor="@color/white"
+                    app:timeTextSize="@dimen/px_text_24" />
+
+                    -->
+
+    <cn.iwgang.countdownview.CountdownView
+        android:id="@+id/cv_countdownViewTest_07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+
+
+        app:isShowDay="true"
+        app:isShowHour="true"
+
+        app:isShowMinute="true"
+        app:isShowSecond="true"
+        app:isTimeTextBold="true"
+
+
+        app:suffixDay="天"
+        app:suffixHour=":"
+        app:suffixMinute=":"
+
+
+        app:suffixTextColor="#000000"
+        app:suffixTextSize="12sp"
+        app:timeTextColor="#292828"
+        app:timeTextSize="22sp"/>
+
+    <!--
+        app:suffixDay="天"
+        app:suffixGravity="bottom"
+        app:suffixHour="小时"
+        app:suffixMinute="分钟"
+        app:suffixSecond="秒"
+    -->
+
+</LinearLayout>
